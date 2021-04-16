@@ -9,3 +9,7 @@ h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}

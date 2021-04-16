@@ -13,6 +13,11 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Text */
 body {
   font-family: 'Roboto', sans-serif;
@@ -36,6 +41,39 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1rem;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 1.3rem;
+}
+
+footer h1 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  padding: 0.3rem 0 0.3rem 0;
+}
+
+footer li .li--padding-left {
+  padding-left: 0.3rem;
+}
+
+footer i {
+  font-size: 0.8rem;
+  padding-right: 0.3rem;
+}
+
+footer a {
+  cursor: pointer;
 }
 
 /* SEARCH */
@@ -68,6 +106,10 @@ h2 {
   background-color: #f6f6f6;
   text-align: center;
   padding: 3rem 0;
+}
+
+.search__restaurants h2 {
+  padding: 0 3rem 0 3rem;
 }
 
 .search__restaurants p {
@@ -192,10 +234,22 @@ h2 {
   height: 11rem;
 }
 
+.restaurants__cards__new {
+  background-color: #99E2D0;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #278870;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  border-radius: 0.15rem;
+}
+
 .restaurants__cards__heart {
   font-size: 1.5rem;
   position: absolute;
-  right: 3rem;
+  right: 1.8rem;
   bottom: 1.3rem;
   cursor: pointer;
 }
