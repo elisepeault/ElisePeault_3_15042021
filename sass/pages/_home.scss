@@ -54,7 +54,6 @@
         }
     }
 }
-
 .card {
     background-color: $bg-color;    
     display: inline-flex;
@@ -64,6 +63,10 @@
     border: none;
     border-radius: 1.2rem;
     box-shadow: -3px 4px 10px darken($bg-color, 6%), 3px 4px 10px darken($bg-color, 6%);
+    @include desktop-only {
+        flex: 1 1;
+        margin: 0 2.2rem 0 2.2rem;
+    }
     &--primary {
         background-color: lighten($primary-color, 35%);
     }
@@ -96,7 +99,7 @@
     background-color: $bg-color;
     padding: 3rem 1.5rem 3rem 1.5rem;
     & h2 {
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
     }
     &__cards {
         display: flex;

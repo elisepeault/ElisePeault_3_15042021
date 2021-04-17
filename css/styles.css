@@ -201,6 +201,15 @@ footer a {
           box-shadow: -3px 4px 10px #e7e7e7, 3px 4px 10px #e7e7e7;
 }
 
+@media screen and (min-width: 1025px) {
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    margin: 0 2.2rem 0 2.2rem;
+  }
+}
+
 .card--primary {
   background-color: #f2eafb;
 }
@@ -237,7 +246,7 @@ footer a {
 }
 
 .restaurants h2 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .restaurants__cards {
