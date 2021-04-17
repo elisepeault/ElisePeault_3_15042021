@@ -32,88 +32,92 @@
             <section class="operation">
                 <h2>Fonctionnement</h2>
                 <div class="operation__cards">
-                    <span class="operation__cards__number">1</span>
-                    <span class="operation__cards__icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </span>
-                    <p class="operation__cards__step">Choisissez un restaurant</p>
-                </div>
-                <div class="operation__cards">
-                    <span class="operation__cards__number">2</span>
-                    <span class="operation__cards__icon">
-                        <i class="fas fa-list-ul"></i>
-                    </span>
-                    <p class="operation__cards__step">Composez votre menu</p>
-                </div>
-                <div class="operation__cards operation__cards--primary">
-                    <span class="operation__cards__number">3</span>
-                    <span class="operation__cards__icon operation__cards__icon--primary">
-                        <i class="fas fa-store"></i>
-                    </span>
-                    <p class="operation__cards__step">Dégustez au restaurant</p>
+                    <div class="card">
+                        <span class="card__number">1</span>
+                        <span class="card__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </span>
+                        <p class="card__step">Choisissez un restaurant</p>
+                    </div>
+                    <div class="card">
+                        <span class="card__number">2</span>
+                        <span class="card__icon">
+                            <i class="fas fa-list-ul"></i>
+                        </span>
+                        <p class="card__step">Composez votre menu</p>
+                    </div>
+                    <div class="card card--primary">
+                        <span class="card__number">3</span>
+                        <span class="card__icon card__icon--primary">
+                            <i class="fas fa-store"></i>
+                        </span>
+                        <p class="card__step">Dégustez au restaurant</p>
+                    </div>
                 </div>
 
             </section>
             <!--RESTAURANTS-->
             <section class="restaurants">
                 <h2>Restaurants</h2>
-                <div class="restaurants__margin">
-                    <a>
-                        <figure class="restaurants__cards">
-                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat du restaurant La palette du goût"/>
-                            <figcaption>
-                                <span class="restaurants__cards__new">Nouveau</span>
-                                <span class="restaurants__cards__heart">
-                                    <i class="far fa-heart"></i>
-                                </span>
-                                <h3 class="restaurants__cards__name">La palette du goût</h3>
-                                <p class="restaurants__cards__location">Ménilmontant</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="restaurants__margin">
-                    <a>
-                        <figure class="restaurants__cards">
-                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Plat du restaurant La note enchantée"/>
-                            <figcaption>
-                                <span class="restaurants__cards__new">Nouveau</span>
-                                <span class="restaurants__cards__heart">
-                                    <i class="far fa-heart"></i>
-                                </span>
-                                <h3 class="restaurants__cards__name">La note enchantée</h3>
-                                <p class="restaurants__cards__location">Charonne</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="restaurants__margin">
-                    <a>
-                        <figure class="restaurants__cards">
-                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat du restaurant À la française"/>
-                            <figcaption>
-                                <span class="restaurants__cards__heart">
-                                    <i class="far fa-heart"></i>
-                                </span>
-                                <h3 class="restaurants__cards__name">À la française</h3>
-                                <p class="restaurants__cards__location">Cité Rouge</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="restaurants__margin">
-                    <a>
-                        <figure class="restaurants__cards">
-                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat du restaurant Le délice des sens"/>
-                            <figcaption>
-                                <span class="restaurants__cards__heart">
-                                    <i class="far fa-heart"></i>
-                                </span>
-                                <h3 class="restaurants__cards__name">Le délice des sens</h3>
-                                <p class="restaurants__cards__location">Folie-Méricourt</p>
-                            </figcaption>
-                        </figure>
-                    </a>
+                <div class="restaurants__cards">
+                    <div class="restaurants__margin">
+                        <a>
+                            <figure class="restaurant-card">
+                                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat du restaurant La palette du goût"/>
+                                <figcaption>
+                                    <span class="restaurant-card__new">Nouveau</span>
+                                    <span class="restaurant-card__heart">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <h3 class="restaurant-card__name">La palette du goût</h3>
+                                    <p class="restaurant-card__location">Ménilmontant</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="restaurants__margin">
+                        <a>
+                            <figure class="restaurant-card">
+                                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Plat du restaurant La note enchantée"/>
+                                <figcaption>
+                                    <span class="restaurant-card__new">Nouveau</span>
+                                    <span class="restaurant-card__heart">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <h3 class="restaurant-card__name">La note enchantée</h3>
+                                    <p class="restaurant-card__location">Charonne</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="restaurants__margin">
+                        <a>
+                            <figure class="restaurant-card">
+                                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat du restaurant À la française"/>
+                                <figcaption>
+                                    <span class="restaurant-card__heart">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <h3 class="restaurant-card__name">À la française</h3>
+                                    <p class="restaurant-card__location">Cité Rouge</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="restaurants__margin">
+                        <a>
+                            <figure class="restaurant-card">
+                                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat du restaurant Le délice des sens"/>
+                                <figcaption>
+                                    <span class="restaurant-card__heart">
+                                        <i class="far fa-heart"></i>
+                                    </span>
+                                    <h3 class="restaurant-card__name">Le délice des sens</h3>
+                                    <p class="restaurant-card__location">Folie-Méricourt</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>

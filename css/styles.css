@@ -1,3 +1,4 @@
+/* Colors */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body, html {
@@ -52,10 +53,34 @@ footer {
 footer h1 {
   font-size: 1.1rem;
   font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
 }
 
 footer ul {
   padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 footer li {
@@ -133,15 +158,7 @@ footer a {
 
 /* OPERATION */
 .operation {
-  /*margin: 3.5rem 2rem;*/
   margin: 3.5rem 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .operation h2 {
@@ -149,6 +166,28 @@ footer a {
 }
 
 .operation__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (min-width: 900px) {
+  .operation__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.card {
   background-color: #f6f6f6;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -162,11 +201,11 @@ footer a {
           box-shadow: -3px 4px 10px #e7e7e7, 3px 4px 10px #e7e7e7;
 }
 
-.operation__cards--primary {
+.card--primary {
   background-color: #f2eafb;
 }
 
-.operation__cards__number {
+.card__number {
   background-color: #9356DC;
   font-size: 0.8rem;
   padding: 0.3rem 0.55rem;
@@ -176,30 +215,23 @@ footer a {
   left: -0.8rem;
 }
 
-.operation__cards__icon {
+.card__icon {
   font-size: 1.2rem;
   color: #838383;
   padding: 0 1rem;
 }
 
-.operation__cards__icon--primary {
+.card__icon--primary {
   color: #9356DC;
 }
 
-.operation__cards__step {
+.card__step {
   font-size: 1rem;
   font-weight: 700;
 }
 
 /* RESTAURANTS */
 .restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: #f6f6f6;
   padding: 3rem 1.5rem 3rem 1.5rem;
 }
@@ -208,15 +240,53 @@ footer a {
   margin-bottom: 0.8rem;
 }
 
+.restaurants__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .restaurants__margin {
   margin: 0.6rem 0 0.6rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__margin {
+    margin: 0 0.7rem 1.4rem 0.7rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 45%;
+            flex: 1 1 45%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .restaurants__margin {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 15%;
+            flex: 1 1 15%;
+  }
 }
 
 .restaurants a {
   cursor: pointer;
 }
 
-.restaurants__cards {
+.restaurant-card {
   background-color: white;
   border-radius: 1rem;
   height: 15.5rem;
@@ -226,7 +296,7 @@ footer a {
   position: relative;
 }
 
-.restaurants__cards img {
+.restaurant-card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -234,7 +304,7 @@ footer a {
   height: 11rem;
 }
 
-.restaurants__cards__new {
+.restaurant-card__new {
   background-color: #99E2D0;
   position: absolute;
   right: 0.8rem;
@@ -246,7 +316,7 @@ footer a {
   border-radius: 0.15rem;
 }
 
-.restaurants__cards__heart {
+.restaurant-card__heart {
   font-size: 1.5rem;
   position: absolute;
   right: 1.8rem;
@@ -254,12 +324,12 @@ footer a {
   cursor: pointer;
 }
 
-.restaurants__cards__name {
+.restaurant-card__name {
   font-size: 1.1rem;
   margin: 0.5rem 0 0.2rem 0.7rem;
 }
 
-.restaurants__cards__location {
+.restaurant-card__location {
   margin: 0.3rem 0 0 0.7rem;
 }
 /*# sourceMappingURL=styles.css.map */
