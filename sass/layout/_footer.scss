@@ -6,7 +6,7 @@ footer {
         font-size: 1.1rem;
         font-weight: normal;
         padding-bottom: 0.5rem;
-        @include tablet-only {
+        @include tablet {
             text-align: center;
             padding-bottom: 1.5rem;
         }
@@ -14,7 +14,7 @@ footer {
     & ul {
         padding: 0;
         margin: 0;
-        @include tablet-only {
+        @include tablet {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;

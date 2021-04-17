@@ -49,7 +49,7 @@
         display: flex;
         flex-direction: column; 
         justify-content: space-evenly;
-        @include tablet-desktop {
+        @include operation-row {
             flex-direction: row;
         }
     }
@@ -63,7 +63,7 @@
     border: none;
     border-radius: 1.2rem;
     box-shadow: -3px 4px 10px darken($bg-color, 6%), 3px 4px 10px darken($bg-color, 6%);
-    @include desktop-only {
+    @include desktop {
         flex: 1 1;
         margin: 0 2.2rem 0 2.2rem;
     }
@@ -104,18 +104,18 @@
     &__cards {
         display: flex;
         flex-direction: column;
-        @include tablet-only {
+        @include tablet {
             flex-direction: row;
             flex-wrap: wrap;
         }
     }
     &__margin {
         margin: 0.6rem 0 0.6rem 0;
-        @include tablet-only {
+        @include tablet {
             margin: 0 0.7rem 1.4rem 0.7rem;
             flex: 1 1 45%;
         }
-        @include desktop-only {
+        @include desktop {
             flex: 1 1 15%;
         }
     }
