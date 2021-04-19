@@ -5,11 +5,34 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/* Logo & Titles*/
+.logo, h1 {
+    font-family: 'Shrikhand', cursive;
+}
+h1 {
+    font-weight: normal;
+}
+
+/* Titles on the Home page ("Operation" and "Restaurants") */
 h2 {
     font-size: 1.5rem;
     font-weight: 700;
 }
-/* Logo & Titles*/
-.logo, h1 {
-    font-family: 'Shrikhand', cursive;
+/* Restaurants cards names (Home) & Dishes names (Menus pages)*/
+h3 {
+    font-size: 1.1rem;
+}
+/* Titles on menu pages ("Staters", "Dishes" and "Desserts" */
+h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0 0 0;
+    &::after {
+        content: "";
+        display: block;
+        width: 2.5rem;
+        padding-top: 0.3rem;
+        border-bottom: solid $tertiary-color;
+    }
 }

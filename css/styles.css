@@ -24,14 +24,54 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Logo & Titles*/
+.logo, h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+/* Titles on the Home page ("Operation" and "Restaurants") */
 h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-/* Logo & Titles*/
-.logo, h1 {
-  font-family: 'Shrikhand', cursive;
+/* Restaurants cards names (Home) & Dishes names (Menus pages)*/
+h3 {
+  font-size: 1.1rem;
+}
+
+/* Titles on menu pages ("Staters", "Dishes" and "Desserts" */
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+}
+
+h4::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  padding-top: 0.3rem;
+  border-bottom: solid #99E2D0;
+}
+
+/* Button "explore our restaurants" (Home) & "order" (menus pages) */
+.search__restaurants button, .order-button button {
+  margin: 1rem 0;
+  font-size: 1rem;
+  padding: 1.1rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  -webkit-box-shadow: 0px 7px 7px #d0d0d0;
+          box-shadow: 0px 7px 7px #d0d0d0;
+  cursor: pointer;
 }
 
 .header__logo {
@@ -52,7 +92,6 @@ footer {
 
 footer h1 {
   font-size: 1.1rem;
-  font-weight: normal;
   padding-bottom: 0.5rem;
 }
 
@@ -131,6 +170,7 @@ footer a {
   background-color: #f6f6f6;
   text-align: center;
   padding: 3rem 0;
+  /* & button : in _components.scss */
 }
 
 .search__restaurants h2 {
@@ -140,20 +180,6 @@ footer a {
 .search__restaurants p {
   font-size: 1.1rem;
   padding: 1rem;
-}
-
-.search__restaurants button {
-  margin: 1rem 0;
-  font-size: 1rem;
-  padding: 1.1rem 1.5rem;
-  border: none;
-  border-radius: 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  -webkit-box-shadow: 0px 7px 7px #d0d0d0;
-          box-shadow: 0px 7px 7px #d0d0d0;
-  cursor: pointer;
 }
 
 /* OPERATION */
@@ -334,7 +360,6 @@ footer a {
 }
 
 .restaurant-card__name {
-  font-size: 1.1rem;
   margin: 0.5rem 0 0.2rem 0.7rem;
 }
 

@@ -27,17 +27,7 @@
         font-size: 1.1rem;
         padding: 1rem;
     }
-    & button {
-        margin: 1rem 0;
-        font-size: 1rem;
-        padding: 1.1rem 1.5rem;
-        border: none;
-        border-radius: 2rem;
-        background: linear-gradient($secondary-color, $primary-color);
-        color: white;
-        box-shadow: 0px 7px 7px darken($bg-color, 15%);
-        cursor: pointer;
-    }
+    /* & button : in _components.scss */
 }
 /* OPERATION */
 .operation {
@@ -148,14 +138,13 @@
         border-radius: 0.15rem;
     }
     &__heart {
-        font-size: 1.5rem;
-        position: absolute;
-        right: 1.8rem;
-        bottom : 1.3rem;
-        cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1.8rem;
+    bottom : 1.3rem;
+    cursor: pointer;
     }
     &__name {
-        font-size: 1.1rem;
         margin : 0.5rem 0 0.2rem 0.7rem;
     }
     &__location {

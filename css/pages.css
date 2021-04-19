@@ -1,0 +1,225 @@
+/* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Text */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Logo & Titles*/
+.logo, h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+/* Titles on the Home page ("Operation" and "Restaurants") */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Restaurants cards names (Home) & Dishes names (Menus pages)*/
+h3 {
+  font-size: 1.1rem;
+}
+
+/* Titles on menu pages ("Staters", "Dishes" and "Desserts" */
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+}
+
+h4::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  padding-top: 0.3rem;
+  border-bottom: solid #99E2D0;
+}
+
+/* Button "explore our restaurants" (Home) & "order" (menus pages) */
+.search__restaurants button, .order-button button {
+  margin: 1rem 0;
+  font-size: 1rem;
+  padding: 1.1rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  -webkit-box-shadow: 0px 7px 7px #d0d0d0;
+          box-shadow: 0px 7px 7px #d0d0d0;
+  cursor: pointer;
+}
+
+.header__arrow i {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 1.4rem;
+  left: 1.4rem;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 1.3rem;
+}
+
+footer h1 {
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+footer li {
+  list-style: none;
+  padding: 0.3rem 0 0.3rem 0;
+}
+
+footer li .li--padding-left {
+  padding-left: 0.3rem;
+}
+
+footer i {
+  font-size: 0.8rem;
+  padding-right: 0.3rem;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+main {
+  background-color: #f6f6f6;
+}
+
+.menu-photo {
+  width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  padding: 2rem 1.5rem 0 1.5rem;
+  border-radius: 2.2rem 2.2rem 0 0;
+  position: relative;
+  top: -3.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu h1 {
+  font-size: 1.8rem;
+  /*padding-bottom: 1rem;*/
+}
+
+.menu__heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+  cursor: pointer;
+}
+
+.menu__card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  position: relative;
+  -webkit-box-shadow: 0 4px 20px #dddddd;
+          box-shadow: 0 4px 20px #dddddd;
+}
+
+.menu__card__dish-title {
+  padding-bottom: 0.3rem;
+}
+
+.menu__card__price {
+  font-weight: 600;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0.7rem;
+}
+
+.card-margin {
+  margin: 1rem 0 1rem 0;
+}
+
+.card-margin a {
+  cursor: pointer;
+}
+
+/* Order Button => _components.scss*/
+.order-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.order-button button {
+  padding: 1.1rem 3.5rem;
+  margin: 2rem 0;
+}
+/*# sourceMappingURL=pages.css.map */
