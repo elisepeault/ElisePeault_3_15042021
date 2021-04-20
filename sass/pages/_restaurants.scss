@@ -18,12 +18,8 @@ main {
     }
     @include desktop {
         margin: auto;  
-        width: 50%;
+        width: 50rem;
         border-radius: 2rem;
-        & img {
-            object-fit: contain;
-        }
-
     }
 }
 .menu {
@@ -43,6 +39,9 @@ main {
         right: 2.5rem;
         top: 2.5rem;
         cursor: pointer;    
+        @include desktop {
+            left : 20rem;
+        }
     }
     &__card {
         background-color: white;
@@ -70,12 +69,13 @@ main {
     }
 }
 .cards-container {
-    @include desktop {
+    @include desktop-menu-column  {
         display: flex;
         flex-direction: row;
         &__categories {
             flex-basis: 30%;
             margin: auto;
+            margin-top: 0;
         }
     }
 }
