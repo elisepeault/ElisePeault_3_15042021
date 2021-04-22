@@ -66,7 +66,6 @@ h4::after {
   padding: 1.1rem 1.5rem;
   border: none;
   border-radius: 2rem;
-  /*background: linear-gradient(175deg, $secondary-color, $primary-color);*/
   background-color: #9356DC;
   background-image: linear-gradient(175deg, #FF79DA, rgba(255, 255, 255, 0));
   color: white;
@@ -82,8 +81,29 @@ h4::after {
 .search__restaurants button:hover, .order-button button:hover {
   -webkit-box-shadow: 0px 5px 10px #717171;
           box-shadow: 0px 5px 10px #717171;
-  /*background: linear-gradient(175deg, lighten($secondary-color, 4%), lighten($primary-color, 4%));*/
-  background-color: #ae80e5;
+  background-color: #b184e6;
+}
+
+/* Like heart button (favorite menu) => Home page and Restaurants pages */
+.restaurant-card__heart, .menu__heart {
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.restaurant-card__heart--full, .menu__heart--full {
+  position: absolute;
+  color: rgba(255, 255, 255, 0);
+}
+
+.restaurant-card__heart--full:hover, .menu__heart--full:hover {
+  /*color: rgba(0,255,255,0.5);*/
+  /*color: linear-gradient(175deg, $secondary-color, $primary-color);*/
+  color: #FF79DA;
 }
 
 .header__logo {
@@ -152,6 +172,32 @@ footer a {
   cursor: pointer;
 }
 
+/* LOADER */
+/*.loader {
+    width: 100px;
+    height: 100px;
+    border: 10px solid transparent;
+    border-top: 10px solid $secondary-color;
+    border-bottom: 10px solid $tertiary-color;
+    border-radius: 50%;
+    animation: spin-loader 2s 3;
+    /* Place the loader in the middle of the page*/
+/* margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}*/
+/* Loader animation */
+/*@keyframes spin-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
 /* SEARCH */
 .search__location {
   background-color: #e7e7e7;
@@ -225,6 +271,7 @@ footer a {
   }
 }
 
+/* Card model for operation steps 1, 2 & 3 */
 .card {
   background-color: #f6f6f6;
   display: -webkit-inline-box;
@@ -237,6 +284,17 @@ footer a {
   border-radius: 1.2rem;
   -webkit-box-shadow: -3px 4px 10px #e7e7e7, 3px 4px 10px #e7e7e7;
           box-shadow: -3px 4px 10px #e7e7e7, 3px 4px 10px #e7e7e7;
+  /* Background-color and icon color change when hovered*/
+  /* Desktop media query */
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #f2eafb;
+}
+
+.card:hover .card__icon {
+  color: #9356DC;
 }
 
 @media screen and (min-width: 1025px) {
@@ -246,10 +304,6 @@ footer a {
             flex: 1 1;
     margin: 0 2.2rem 0 2.2rem;
   }
-}
-
-.card--primary {
-  background-color: #f2eafb;
 }
 
 .card__number {
@@ -268,10 +322,6 @@ footer a {
   padding: 0 1rem;
 }
 
-.card__icon--primary {
-  color: #9356DC;
-}
-
 .card__step {
   font-size: 1rem;
   font-weight: 700;
@@ -281,6 +331,7 @@ footer a {
 .restaurants {
   background-color: #f6f6f6;
   padding: 3rem 1.5rem 3rem 1.5rem;
+  /* margin of the cards => around the link */
 }
 
 .restaurants h2 {
@@ -333,6 +384,7 @@ footer a {
   cursor: pointer;
 }
 
+/* restaurant card model */
 .restaurant-card {
   background-color: white;
   border-radius: 1rem;
@@ -341,6 +393,8 @@ footer a {
           box-shadow: 0px 5px 7px #dddddd;
   margin: 0;
   position: relative;
+  /* Rectangle which indicate that the restaurant is new to the website */
+  /* Like heart button => favorite menu */
 }
 
 .restaurant-card img {
@@ -364,11 +418,11 @@ footer a {
 }
 
 .restaurant-card__heart {
-  font-size: 1.5rem;
   position: absolute;
   right: 1.8rem;
   bottom: 1.3rem;
-  cursor: pointer;
+  /*&--full {
+        }*/
 }
 
 .restaurant-card__name {

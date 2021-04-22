@@ -8,6 +8,7 @@
         <title>ohmyfood</title> 
     </head>
     <body>
+        <div class="loader"></div>
         <header>
             <div class="header__logo">
                 <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
@@ -44,9 +45,9 @@
                         </span>
                         <p class="card__step">Composez votre menu</p>
                     </div>
-                    <div class="card card--primary">
+                    <div class="card">
                         <span class="card__number">3</span>
-                        <span class="card__icon card__icon--primary">
+                        <span class="card__icon">
                             <i class="fas fa-store"></i>
                         </span>
                         <p class="card__step">Dégustez au restaurant</p>
@@ -64,9 +65,10 @@
                                 <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat du restaurant La palette du goût"/>
                                 <figcaption>
                                     <span class="restaurant-card__new">Nouveau</span>
-                                    <span class="restaurant-card__heart">
-                                        <i class="far fa-heart"></i>
-                                    </span>
+                                    <button class="restaurant-card__heart" name="favorite">
+                                        <i class="fas fa-heart restaurant-card__heart--full"></i>
+                                        <i class="far fa-heart restaurant-card__heart--empty"></i>
+                                    </button>
                                     <h3 class="restaurant-card__name">La palette du goût</h3>
                                     <p class="restaurant-card__location">Ménilmontant</p>
                                 </figcaption>
