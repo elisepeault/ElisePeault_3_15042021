@@ -67,7 +67,7 @@ main {
         }
     }
 }
-    /* contain all the cards categories (starters, dishes, desserts) */
+/* contain all the cards categories (starters, dishes, desserts) */
 .cards-container {
     @include desktop-menu-column  {
         display: flex;
@@ -80,7 +80,7 @@ main {
         }
     }
 }
-    /* margin around the link of a card */ 
+/* margin around the link of a card */ 
 .card-margin {
     margin: 1rem 0 1rem 0;
     & a {
