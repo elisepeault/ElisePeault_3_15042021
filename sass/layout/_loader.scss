@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     //Loading page animation 
-    animation: loading-page-fading 2.5s;
+    animation: loading-page-fading 2s;
     &__ohmyfood {
         color: white;
         font-size: 3rem;
@@ -31,7 +31,7 @@
         margin: auto;
         margin-top: 3rem;
         //Loader animation 
-        animation: spin-loader cubic-bezier(.17,.67,.66,.57) 1s infinite ;
+        animation: spin-loader cubic-bezier(.17,.67,.66,.57) 0.8s infinite;
     }
 }
 
