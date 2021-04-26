@@ -40,7 +40,7 @@ h2 {
   font-weight: 700;
 }
 
-/* Restaurants cards names (Home) & Dishes names (Menus pages)*/
+/* Restaurants cards names (Home) & Dishes titles (Menus pages)*/
 h3 {
   font-size: 1.1rem;
 }
@@ -338,6 +338,12 @@ main {
   font-size: 1.8rem;
 }
 
+@media screen and (max-width: 375px) {
+  .menu h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .menu__heart {
   position: absolute;
   right: 2.5rem;
@@ -347,6 +353,12 @@ main {
 @media screen and (min-width: 1025px) {
   .menu__heart {
     left: 20rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu__heart {
+    top: 2.4rem;
   }
 }
 
@@ -375,8 +387,20 @@ main {
   padding-bottom: 0.3rem;
 }
 
+@media screen and (max-width: 375px) {
+  .menu__card__dish-title {
+    font-size: 1rem;
+  }
+}
+
 .menu__card__dish-info {
   font-size: 0.91rem;
+}
+
+@media screen and (max-width: 375px) {
+  .menu__card__dish-info {
+    font-size: 0.73rem;
+  }
 }
 
 .menu__card__price {

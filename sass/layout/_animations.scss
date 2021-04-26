@@ -38,7 +38,7 @@
         animation: fade-in-up $fade-in-up__duration 1.1s both;
     }
  }
-// Keyframes Fade-in-up animation
+// Keyframes Fade-in-up animation => dishes titles fade in while sliding up
 @keyframes fade-in-up {
     0% {
         opacity: 0;

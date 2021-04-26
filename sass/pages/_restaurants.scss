@@ -32,6 +32,9 @@ main {
     flex-direction: column;
     & h1 {
         font-size: 1.8rem;
+        @include small-mobile {
+            font-size: 1.5rem;
+        }
     }
     &__heart {
         position: absolute;
@@ -39,6 +42,9 @@ main {
         top: 2.7rem;  
         @include desktop {
             left : 20rem;
+        }
+        @include small-mobile {
+            top: 2.4rem;
         }
     }
     /* rectangle cards with the dish title, description and price */
@@ -54,9 +60,15 @@ main {
         }
         &__dish-title {
             padding-bottom: 0.3rem;
+            @include small-mobile {
+                font-size: 1rem;
+            }
             }
         &__dish-info {
             font-size: 0.91rem;
+            @include small-mobile {
+                font-size: 0.73rem;
+            }
         }
         &__price {
             font-size: 1rem;
