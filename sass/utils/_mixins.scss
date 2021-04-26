@@ -1,21 +1,22 @@
+// To display correctly menus into columns (Restaurants pages) above desktop breakpoint
 @mixin desktop-menu-column {
     @media screen and (min-width: 1170px) {
      @content;   
        } 
 }
-
+// Desktop breakpoint
 @mixin desktop {
     @media screen and (min-width: 1025px) {
      @content;   
     }
 }
-
+// To display correctly the operation's 3 steps (Home page) between tablet & desktop breakpoints
 @mixin operation-row {
     @media screen and (min-width: 900px) {
      @content;   
     }
 }
-
+// Tablet breakpoint
 @mixin tablet {
     @media screen and (min-width: 768px) {
      @content;   
