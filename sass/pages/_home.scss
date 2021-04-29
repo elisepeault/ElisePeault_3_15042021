@@ -27,7 +27,7 @@
         font-size: 1.1rem;
         padding: 1rem;
     }
-    /* & button : in _components.scss */
+    // & button : in _components.scss 
 }
 
 /* OPERATION */
@@ -45,7 +45,7 @@
         }
     }
 }
-    /* Card model for operation steps 1, 2 & 3 */
+    // Card model for operation steps 1, 2 & 3 
 .card {
     background-color: $bg-color;    
     display: inline-flex;
@@ -55,7 +55,7 @@
     border: none;
     border-radius: 1.2rem;
     box-shadow: -3px 4px 10px darken($bg-color, 6%), 3px 4px 10px darken($bg-color, 6%);
-    /* Background-color and icon color change when hovered*/
+    // Background-color and icon color change when hovered
     &:hover {
         cursor: pointer;
         background-color: lighten($primary-color, 35%);
@@ -63,7 +63,7 @@
     &:hover &__icon {
         color: $primary-color;
     }
-    /* Desktop media query */
+    // Desktop media query 
     @include desktop {
         flex: 1 1;
         margin: 0 2.2rem 0 2.2rem;
@@ -103,7 +103,7 @@
             flex-wrap: wrap;
         }
     }
-    /* margin of the cards => around the link */
+    // margin of the cards => around the link 
     &__margin {
         margin: 0.6rem 0 0.6rem 0;
         @include tablet {
@@ -118,7 +118,7 @@
         cursor: pointer;
     }
 }
-    /* restaurant card model */
+    // restaurant card model 
 .restaurant-card {
     background-color: white;
     border-radius: 1rem;
@@ -132,7 +132,7 @@
         border-radius: 1rem 1rem 0 0;
         height: 11rem;
     }
-    /* Rectangle which indicate that the restaurant is new to the website */
+    // Rectangle which indicate that the restaurant is new to the website 
     &__new {
         background-color: $tertiary-color;
         position: absolute;
@@ -144,7 +144,7 @@
         padding: 0.3rem 0.6rem 0.3rem 0.6rem;
         border-radius: 0.15rem;
     }
-    /* Like heart button => favorite menu */
+    // Like heart button => favorite menu 
     &__heart {
         position: absolute;
         right: 1.8rem;

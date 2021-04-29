@@ -69,36 +69,32 @@ h4::after {
   border-radius: 2rem;
   color: white;
   cursor: pointer;
-  /* position */
   position: relative;
   z-index: 1;
-  /* transition => default properties */
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   -webkit-box-shadow: 0px 7px 7px #d0d0d0;
           box-shadow: 0px 7px 7px #d0d0d0;
 }
 
-.search__restaurants button:hover::after, .order-button button:hover::after {
-  opacity: 1;
-}
-
 .search__restaurants button::after, .order-button button::after {
   content: "";
   border-radius: 2rem;
-  /* position */
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
-  /* transition => lighter background color and accentuation on shadows */
   background: linear-gradient(175deg, #ff93e1, #a16be0);
   -webkit-box-shadow: 0px 5px 10px #717171;
           box-shadow: 0px 5px 10px #717171;
   opacity: 0;
   -webkit-transition: opacity ease-out 0.4s;
   transition: opacity ease-out 0.4s;
+}
+
+.search__restaurants button:hover::after, .order-button button:hover::after {
+  opacity: 1;
 }
 
 /* Like heart button (favorite menu) => Home page and Restaurants pages */
@@ -116,11 +112,11 @@ h4::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f004";
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -1.5rem;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -380,7 +376,6 @@ main {
   background-color: #f6f6f6;
 }
 
-/* Dish photo of a restaurant */
 .menu-photo {
   height: 250px;
 }
@@ -422,7 +417,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* rectangle cards with the dish title, description and price */
 }
 
 .menu h1 {
@@ -435,20 +429,20 @@ main {
   }
 }
 
-.menu__heart {
+.menu__heart, .menu__heart::after {
   position: absolute;
-  right: 2.5rem;
-  top: 2.7rem;
+  top: 2.5rem;
+  right: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
-  .menu__heart {
+  .menu__heart, .menu__heart::after {
     left: 20rem;
   }
 }
 
 @media screen and (max-width: 374px) {
-  .menu__heart {
+  .menu__heart, .menu__heart::after {
     top: 2.4rem;
   }
 }
@@ -502,7 +496,6 @@ main {
   bottom: 0.7rem;
 }
 
-/* contain all the cards categories (starters, dishes, desserts) */
 @media screen and (min-width: 1170px) {
   .cards-container {
     display: -webkit-box;
@@ -512,7 +505,6 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    /* Contain all the cards of a category (starters cards for ex) */
   }
   .cards-container__categories {
     -ms-flex-preferred-size: 30%;
@@ -522,7 +514,6 @@ main {
   }
 }
 
-/* margin around the link of a card */
 .card-margin {
   margin: 1rem 0 1rem 0;
 }
@@ -531,7 +522,6 @@ main {
   cursor: pointer;
 }
 
-/* Order Button => _components.scss*/
 .order-button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

@@ -1,7 +1,7 @@
 main {
     background-color: $bg-color;
 }
-    /* Dish photo of a restaurant */
+    // Dish photo of a restaurant 
 .menu-photo {
     height: 250px;
     & img {
@@ -36,10 +36,10 @@ main {
             font-size: 1.5rem;
         }
     }
-    &__heart {
+    &__heart, &__heart::after {
         position: absolute;
-        right: 2.5rem;
-        top: 2.7rem;  
+        top: 2.5rem;  
+        right : 0.5rem;
         @include tablet {
             left : 20rem;
         }
@@ -47,7 +47,7 @@ main {
             top: 2.4rem;
         }
     }
-    /* rectangle cards with the dish title, description and price */
+    // rectangle cards with the dish title, description and price 
     &__card {
         background-color: white;
         border-radius: 1rem;
@@ -79,12 +79,12 @@ main {
         }
     }
 }
-/* contain all the cards categories (starters, dishes, desserts) */
+// contain all the cards categories (starters, dishes, desserts) 
 .cards-container {
     @include desktop-menu-column  {
         display: flex;
         flex-direction: row;
-        /* Contain all the cards of a category (starters cards for ex) */
+        // Contain all the cards of a category (starters cards for ex) 
         &__categories {
             flex-basis: 30%;
             margin: auto;
@@ -92,14 +92,14 @@ main {
         }
     }
 }
-/* margin around the link of a card */ 
+// margin around the link of a card  
 .card-margin {
     margin: 1rem 0 1rem 0;
     & a {
         cursor: pointer;
     }
 }
-/* Order Button => _components.scss*/
+// Order Button => _components.scss
 .order-button {
     align-self: center;
     & button {
