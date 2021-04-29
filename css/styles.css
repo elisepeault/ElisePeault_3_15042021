@@ -122,9 +122,8 @@ h4::after {
   bottom: 0;
   left: 0;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   -webkit-transition: opacity ease-out 0.5s;
   transition: opacity ease-out 0.5s;
@@ -364,8 +363,8 @@ h4::after {
   background-color: #99E2D0;
   border-radius: 0rem 1rem 1rem 0;
   overflow: hidden;
-  -webkit-transform: translateX(3.7rem);
-          transform: translateX(3.7rem);
+  -webkit-transform: translateX(3.75rem);
+          transform: translateX(3.75rem);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;

@@ -63,9 +63,8 @@
             left: 0;
             // Background gradient (+ properties to make it work on a text)
             background: linear-gradient(175deg, $secondary-color, $primary-color);
-            background-clip: text;
             -webkit-background-clip: text;
-            color: transparent;
+            -webkit-text-fill-color: transparent;
             // Transition => make the full heart appear gradualy
             opacity: 0;
             transition: opacity ease-out 0.5s;
