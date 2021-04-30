@@ -58,7 +58,7 @@
 }
 
 
-/* MENU CARDS ANIMATION when selecting a dish (Restaurants pages) => dish-check sliding to the left*/
+/* MENU CARDS ANIMATION when selecting a dish (Restaurants pages) => dish-check sliding to the left */
 .menu {
     &__card {
         overflow: hidden;
@@ -69,6 +69,7 @@
             width: 100%;
             transition: width 0.5s;
         }
+        // For the overflow/text-overflow to work (the check & price are in absolute position => not detected)
         &:hover .menu__card__dish-title {
             width: 60%;
         }
@@ -78,6 +79,7 @@
             width: 100%;
             transition: width 0.5s;
         }
+        // For the overflow/text-overflow to work (the check & price are in absolute position => not detected)
         &:hover .menu__card__dish-info {
             width: 60%;
         }

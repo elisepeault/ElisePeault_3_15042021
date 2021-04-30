@@ -1,4 +1,4 @@
-/* Button "explore our restaurants" (Home) & "order" (menus pages) */
+/* BUTTON "explore our restaurants" (Home) & "order" (menus pages) */
 .search__restaurants, .order-button {
     button {
         margin: 1rem 0;
@@ -36,7 +36,7 @@
     }
 }
 
-/* Like heart button (favorite menu) => Home page and Restaurants pages */
+/* LIKE HEART button (favorite menu) => Home page and Restaurants pages */
 .restaurant-card, .menu {
     &__heart i {
         cursor: pointer;
